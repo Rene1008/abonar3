@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+    android:background="@drawable/nuevoamarillo2">
+
+    <TextView
+            android:id="@+id/tv_operador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="cursive"
+        android:textAlignment="center"
+            android:text="NUEVO OPERADOR:"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="186dp"/>
+
+    <EditText
+            android:id="@+id/et_operador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="15"/>
+
+    <Button
+            android:id="@+id/b_guardarOperador"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+        android:background="#ffbf42"
+            android:text="GUARDAR"/>
+
+    <ListView
+            android:id="@+id/lv_listaOperadores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

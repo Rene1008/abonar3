@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/fondo12"
+              tools:context="com.reneascanta.abonar.MainActivity">
+    //----------------- SUPERIOR ---------------------
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/ib_mas"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/ico1"
+                android:drawableBottom="@drawable/mas4"
+                android:text="aceptar"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="aceptar"
+                android:visibility="invisible"
+                android:layout_weight="2"/>
+
+        <ImageButton
+                android:id="@+id/ib_config"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/ico2"
+                android:drawableBottom="@drawable/mas4"
+                android:text="aceptar"/>
+    </LinearLayout>
+    //------------------- MEDIO -------------------
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/ib_abonar"
+            android:layout_width="303dp"
+            android:layout_height="265dp"
+
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ico5"
+            android:drawableBottom="@drawable/mas4"
+            android:elevation="0dp"
+            android:text="aceptar" />
+    </LinearLayout>
+    //------------------ INFERIOR ---------------------
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/ib_compartir"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/ico4"
+                android:drawableBottom="@drawable/mas4"
+                android:text="aceptar"/>
+
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="aceptar"
+                android:visibility="invisible"
+                android:layout_weight="2"/>
+
+
+        <ImageButton
+                android:id="@+id/ib_nuevo"
+                android:layout_width="59dp"
+                android:layout_height="72dp"
+
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="0.12"
+                android:background="@drawable/ico3"
+                android:drawableBottom="@drawable/mas4"
+                android:text="aceptar"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

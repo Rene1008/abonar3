@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/images"
+              android:orientation="vertical"
+              tools:context="com.reneascanta.abonar.RegistroPropiedad"
+>
+
+    <EditText
+            android:id="@+id/et_serial"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="175dp"
+            android:background="#FFFFFF"
+            android:inputType="number|numberPassword"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:visibility="gone"/>
+
+    <Button
+            android:id="@+id/b_registrarSerial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:elevation="0dp"
+            android:text="REGISTRAR"
+            android:visibility="gone"/>
+
+
+</LinearLayout>

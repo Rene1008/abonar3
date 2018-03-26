@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:background="@drawable/nuevo"
+              >
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#ca3c0a"
+                android:fontFamily="cursive"
+                android:text="EDITAR CLIENTE"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:text="S" />
+
+            <TextView
+                    android:id="@+id/tv_alias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALIAS:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/et_alias2"
+                        android:layout_width="200dp"
+                        android:layout_height="43dp"
+                        android:layout_weight="0.00"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="41dp"/>
+                <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SALDO"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_saldo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EDITAR SALDO:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    android:visibility="gone"/>
+
+            <EditText
+                    android:id="@+id/et_saldo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.00"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="41dp"/>
+
+            <TextView
+                    android:id="@+id/tv_nombres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOMBRES:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"/>
+
+            <EditText
+                    android:id="@+id/et_nombres2"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.00"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="41dp"/>
+
+            <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="OPERADOR:"
+                    android:textSize="15dp"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                <Spinner
+                        android:id="@+id/sd_operador2"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_numeroTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TELEFONO:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="186dp"
+                    android:inputType="phone"/>
+
+            <EditText
+                    android:id="@+id/et_numeroTelefono2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="20"
+                    android:inputType="number"
+                    android:maxLength="15"/>
+
+            <TextView
+                    android:id="@+id/tv_sector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SECTOR:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="186dp"/>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                <Spinner
+                        android:id="@+id/sd_sector2"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"/>
+
+
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPCIÒN:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="186dp"/>
+
+            <EditText
+                    android:id="@+id/et_descripcion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="top"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="150"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:id="@+id/b_editarClientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="GUARDAR"/>
+
+                <Button
+                        android:id="@+id/b_cancelarClientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CANCELAR"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.reneascanta.abonar.Mercancia"
+              android:orientation="vertical"
+    android:background="@drawable/nuevoverde2"
+    >
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2ea518"
+        android:fontFamily="cursive"
+        android:text="..:: AGREGAR AL SALDO ::.."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:background="#2ea518"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="SECTORES:"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+
+                android:id="@+id/s_sectoresMercancia"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"/>
+
+        </LinearLayout>
+
+
+    <ListView
+
+
+        android:id="@+id/lv_clientesSectores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_abonar" default="compile.module.abonar">
+  <dirname property="module.abonar.basedir" file="${ant.file.module_abonar}"/>
+  
+  <property name="module.jdk.home.abonar" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.abonar" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.abonar" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.abonar" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="abonar.output.dir" value="${module.abonar.basedir}/build/classes/production/Abonar"/>
+  <property name="abonar.testoutput.dir" value="${module.abonar.basedir}/build/classes/test/Abonar"/>
+  
+  <path id="abonar.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="abonar.module.production.classpath">
+    <path refid="${module.jdk.classpath.abonar}"/>
+  </path>
+  
+  <path id="abonar.runtime.production.module.classpath">
+    <pathelement location="${abonar.output.dir}"/>
+  </path>
+  
+  <path id="abonar.module.classpath">
+    <path refid="${module.jdk.classpath.abonar}"/>
+    <pathelement location="${abonar.output.dir}"/>
+  </path>
+  
+  <path id="abonar.runtime.module.classpath">
+    <pathelement location="${abonar.testoutput.dir}"/>
+    <pathelement location="${abonar.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.abonar">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.abonar">
+    <patternset refid="excluded.from.module.abonar"/>
+  </patternset>
+  
+  
+  <target name="compile.module.abonar" depends="compile.module.abonar.production,compile.module.abonar.tests" description="Compile module Abonar"/>
+  
+  <target name="compile.module.abonar.production" depends="register.custom.compilers" description="Compile module Abonar; production classes"/>
+  
+  <target name="compile.module.abonar.tests" depends="register.custom.compilers,compile.module.abonar.production" description="compile module Abonar; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.abonar" description="cleanup module">
+    <delete dir="${abonar.output.dir}"/>
+    <delete dir="${abonar.testoutput.dir}"/>
+  </target>
+</project>

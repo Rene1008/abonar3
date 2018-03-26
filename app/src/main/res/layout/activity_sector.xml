@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+    android:background="@drawable/nuevoamarillo2">
+
+    <TextView
+            android:id="@+id/tv_sector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="cursive"
+            android:text="NUEVO SECTOR:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="186dp"/>
+
+    <EditText
+            android:id="@+id/et_sector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="25"/>
+
+    <Button
+            android:id="@+id/b_guardarSector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:background="#ffbf42"
+        android:text="GUARDAR"
+            android:layout_weight="0.05"/>
+
+
+</LinearLayout>

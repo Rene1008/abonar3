@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.reneascanta.abonar.Crear_PDF"
+    tools:ignore="MergeRootFrame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/nuevoamarillo2">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="#ffbf42"
+           android:fontFamily="cursive"
+           android:text="..:: CREAR REPORTE ::.."
+           android:textAlignment="center"
+           android:textColor="#FFFFFF"
+           android:textSize="25dp" />
+       <Button
+           android:id="@+id/b_generarPDF"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="GENERAR PDF"
+           android:visibility="gone"/>
+       <TextView
+           android:id="@+id/prueba"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <ListView
+           android:id="@+id/lv_listaClientesPDF"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:dividerHeight="8dp"
+           />
+   </LinearLayout>
+
+
+
+</FrameLayout>

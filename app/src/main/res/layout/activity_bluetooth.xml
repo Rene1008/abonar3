@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.reneascanta.abonar.Bluetooth"
+              android:orientation="vertical"
+    android:background="@drawable/nuevomorado2">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            //  ----------------- botones para bluetooth --------------------
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                        android:id="@+id/b_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:text="ENCENDER"
+                        tools:layout_editor_absoluteX="73dp"
+                        tools:layout_editor_absoluteY="29dp"
+                    android:textColor="#FFFFFF"
+                    android:background="#5e01a0"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b_off"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="APAGAR"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="73dp"
+                    tools:layout_editor_absoluteY="29dp" />
+                <Button
+                    android:id="@+id/b_disc"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="DESCONECTAR"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="73dp"
+                    tools:layout_editor_absoluteY="29dp" />
+
+                <Button
+                    android:id="@+id/b_listaBluetooth"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="LISTA BLUETOOTH"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="73dp"
+                    tools:layout_editor_absoluteY="29dp" />
+
+            </LinearLayout>
+            //  -----------------  fin botones para bluetooth --------------------
+            //  ----------------- botones para sincronizar --------------------
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp">
+
+
+                    <Button
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/b_txt"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="SINCRONIZAR"
+                        android:background="#6816a3"
+                        />
+
+
+                    <Button
+                        android:id="@+id/b_save"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="CREAR ARCHIVO"
+                        android:textColor="#FFFFFF"
+                         android:background="#6816a3"
+                        />
+
+
+
+
+
+            </LinearLayout>
+            //  ----------------- fin botones para sincronizar --------------------
+
+            <ListView
+                    android:id="@+id/lv_listaBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

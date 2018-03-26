@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:background="@drawable/nuevo">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:background="#ca3c0a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="NUEVO CLIENTE"
+                android:textAlignment="center"
+                android:textColor="#f2f1f3"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tv_alias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="ALIAS:"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_alias"
+                    android:layout_width="200dp"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.00"
+                    android:ems="10"
+                    android:fontFamily="cursive"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="41dp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="SALDO" />
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INGRESE SALDO:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    android:visibility="gone"/>
+
+            <EditText
+                    android:id="@+id/et_saldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_weight="0.00"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="41dp"
+                    android:maxLength="15"/>
+
+            <TextView
+                android:id="@+id/tv_nombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="NOMBRES:"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/et_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="0.00"
+                android:ems="10"
+                android:fontFamily="cursive"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="41dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="OPERADOR:"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                <Spinner
+                        android:id="@+id/sd_operador"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"/>
+
+                <ImageButton
+                        android:id="@+id/ib_agregarOperador"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/mas2"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_numeroTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:inputType="phone"
+                android:text="TELEFONO:"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="186dp" />
+
+            <EditText
+                android:id="@+id/et_numeroTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="cursive"
+                android:inputType="number"
+                android:maxLength="15" />
+
+            <TextView
+                android:id="@+id/tv_sector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="SECTOR:"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="186dp" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                <Spinner
+                        android:id="@+id/sd_sector"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dialog"/>
+
+                <ImageButton
+                        android:id="@+id/ib_sector"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/mas2"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="DESCRIPCIÒN:"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="186dp" />
+
+            <EditText
+                android:id="@+id/et_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:fontFamily="cursive"
+                android:gravity="top"
+                android:inputType="text|textMultiLine"
+                android:maxLength="150" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:id="@+id/b_guardarNuevo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="GUARDAR"/>
+
+                <Button
+                        android:id="@+id/b_mostrar"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MOSTRAR"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Abonar</string>
+     <string name="companyName">Ascanta.com</string>
+     <string name="Numero_id">No 000000</string>
+    <string name="informacion">Informaciòn Cliente</string>
+    <string name="nombre_cliente">Nombre: </string>
+    <string name="sector">Sector: </string>
+    <string name="fecha">Fecha:</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="valor">Valor</string>
+    <string name="detalle">Descripciòn</string>
+    <string name="total">Total</string>
+
+
+
+    <string name="invoice_number">11</string>
+    <string name="invoice_date">Date:</string>
+
+    <string name="company">Company:</string>
+
+    <string name="client_title">Cliente:</string>
+    <string name="client_name">Name:</string>
+
+    <string name="detail_code">Code</string>
+    <string name="detail_description">Description</string>
+    <string name="detail_amount">Amount</string>
+    <string name="detail_price">Price</string>
+    <string name="detail_total">Total</string>
+
+    <string name="invoice_subtotal">SubTotal</string>
+    <string name="invoice_tax">Tax</string>
+
+</resources>

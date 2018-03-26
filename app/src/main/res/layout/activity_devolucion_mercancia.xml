@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.reneascanta.abonar.DevolucionMercancia"
+              android:orientation="vertical"
+     android:background="@drawable/nuevoamarillo2">
+
+
+    <LinearLayout
+        android:background="#ffbf42"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_datosUsuarioDevolucion"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="TextView"
+            android:textColor="#0000f4"
+                android:textSize="18dp"/>
+
+        <TextView
+                android:id="@+id/tv_SaldoClienteAbonar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="TextView"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FECHA: "/>
+
+        <Spinner
+                android:id="@+id/sd_devolucionFechas"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:spinnerMode="dialog"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRENDA: "/>
+
+        <Spinner
+                android:id="@+id/sd_devolucionProductFecha"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:spinnerMode="dialog"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTIDAD:"/>
+
+        <Button
+                android:id="@+id/b_cantidadMas"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:background="#21ea0a"
+                android:text="+"/>
+
+        <EditText
+                android:id="@+id/et_cantidadDevolucion"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:maxLength="3"/>
+
+        <TextView
+                android:id="@+id/tv_detalladoDevolucion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="TextView"/>
+
+        <Button
+                android:id="@+id/b_cantidadMenos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="#f40404"
+                android:text="-"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:text="RAZÒN\nDEVOLUCIÒN:"/>
+
+        <EditText
+                android:id="@+id/et_detalleDevolucion"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="textMultiLine"
+                android:maxLength="100"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_valorPrendaDevolucion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="TextView"/>
+
+        <TextView
+                android:id="@+id/tv_saldoTotalArtificialDevolucion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="TextView"/>
+    </LinearLayout>
+
+    <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/b_agregarListaDevolucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:background="#f19f01"
+                android:text="AGREGAR A LISTA"/>
+        <Button
+                android:id="@+id/b_editarListaDevolucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MODIFICAR PRENDA"
+                android:visibility="gone"
+            android:background="@android:color/holo_red_dark"/>
+
+    </AbsoluteLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ListView
+                android:id="@+id/lv_mercanciaSeleccionada"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+    </LinearLayout>
+
+
+    <Button
+            android:id="@+id/b_guardarDevolucion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:background="#f19f01"
+        android:text="GUARDAR"/>
+
+
+</LinearLayout>

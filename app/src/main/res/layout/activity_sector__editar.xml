@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.reneascanta.abonar.Sector_Editar"
+    android:orientation="vertical"
+    android:background="@drawable/nuevoamarillo2"
+    >
+
+    <TextView
+        android:id="@+id/tv_sector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:text="..:: NUEVO SECTOR ::.."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_sector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="25"/>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/b_guardarSector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffbf42"
+            android:text="GUARDAR"
+            />
+        <Button
+            android:id="@+id/b_editarSector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ef010d"
+            android:visibility="gone"
+            android:text="EDITAR"
+            />
+
+    </AbsoluteLayout>
+
+
+    <ListView
+        android:id="@+id/lv_sector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
